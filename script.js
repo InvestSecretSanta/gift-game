@@ -1,7 +1,7 @@
 const banner = document.getElementById('banner');
 
 // Counter for remaining movements
-let movesLeft = 25; // Allow 10 movements
+let movesLeft = 25; // Allow 25 movements
 
 // Function to move the banner
 function moveBanner() {
@@ -22,8 +22,13 @@ banner.addEventListener('mouseover', moveBanner);
 
 // Click event to show a message
 banner.addEventListener('click', () => {
-    alert('Congratulations! You caught the gift!');
-    banner.textContent = '🎁 The gift is your lunch today! Head to the 4th-floor kitchen at 12 PM.';
-    // Optionally, stop further movement after catching
-    banner.removeEventListener('mouseover', moveBanner);
+    if (movesLeft > 0) {
+        alert('Congratulations! You caught the gift!');
+        banner.textContent = '🎁 The gift is your lunch today! Head to the 4th-floor kitchen at 12 PM.';
+        // Optionally, stop further movement after catching
+        banner.removeEventListener('mouseover', moveBanner);
+    } else {
+        // You can add additional behavior after clicking the banner for the second time
+        alert('You have already caught the gift!');
+    }
 });
