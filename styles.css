@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('secret-santa-article-img.jpg'); /* Ensure the correct file name and extension */
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5f4549ff0e9063196b3a5ea3/e61b2086-ddd5-40bc-9f2f-559538e095a6/secret-santa-article-img.jpg?format=2500w'); /* Ensure the correct file name and extension */
     background-size: cover; /* Ensures the image covers the entire page */
     background-position: center 20%; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating the image */
