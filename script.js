@@ -23,7 +23,7 @@ banner.addEventListener('mouseover', moveBanner);
 // Click event to show a message
 banner.addEventListener('click', () => {
     alert('Congratulations! You caught the gift!');
-    banner.textContent = '🎁 The gift is your lunch today! Head to the 4th-floor kitchen at 12 PM.';
+    banner.textContent = '🎁 The gift is waiting for you! Head to the 4th-floor kitchen at 12 PM.';
     // Optionally, stop further movement after catching
     banner.removeEventListener('mouseover', moveBanner);
 });
